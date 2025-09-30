@@ -4,7 +4,7 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "third_party/stb/stb_image.h"
 
-void solve_steganography(int image_data[], int data_size, std::string key) {
+void decode_steganography(int image_data[], int data_size, std::string key) {
 
     int currentIndex = 1000;
 
@@ -52,7 +52,7 @@ int main() {
     std::cin >> user_key;
 
     std::cout << "------------------------------------------" << std::endl;
-    solve_steganography(image_data_int, data_size, user_key);
+    decode_steganography(image_data_int, data_size, user_key);
     std::cout << "\n------------------------------------------" << std::endl;
 
     delete[] image_data_int;
