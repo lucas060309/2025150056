@@ -48,7 +48,7 @@ int main() {
     stbi_image_free(img_data_char);
 
     std::string user_key;
-    std::cout << "Of the four pillars of OOP, what is the principle of hiding complex implementation details while only exposing essential features to the user? (First letter capitalized): ";
+    std::cout << "Of the four pillars of OOP, what is the principle of separating interface and implementation? (First letter capitalized): ";
     std::cin >> user_key;
 
     std::cout << "------------------------------------------" << std::endl;
